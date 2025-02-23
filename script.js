@@ -67,7 +67,7 @@ function like(id) {
     likeXhr.responseType = 'json';
     likeXhr.onload = () => {
         const joke = likeXhr.response;
-        document.getElementById('joke_'+id).outerHTML = getJokeHTML(joke);
+        document.getElementById('joke'+id).outerHTML = getJokeHTML(joke);
     };
 }
 
